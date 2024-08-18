@@ -60,14 +60,14 @@ uint32_t SerialSBUS::sendRCFrame(bool frameAvailable, bool frameMissed, uint32_t
     {
         PackedRCdataOut.ch0 = channelData[0];
         PackedRCdataOut.ch1 = channelData[1];
-        PackedRCdataOut.ch2 = channelData[2];
+        PackedRCdataOut.ch2 = channelData[5];
         PackedRCdataOut.ch3 = channelData[3];
-        PackedRCdataOut.ch4 = channelData[4];
-        PackedRCdataOut.ch5 = channelData[5];
+        PackedRCdataOut.ch4 = channelData[9];
+        PackedRCdataOut.ch5 = channelData[2];
         PackedRCdataOut.ch6 = channelData[6];
         PackedRCdataOut.ch7 = channelData[7];
         PackedRCdataOut.ch8 = channelData[8];
-        PackedRCdataOut.ch9 = channelData[9];
+        PackedRCdataOut.ch9 = channelData[4];
         PackedRCdataOut.ch10 = channelData[10];
         PackedRCdataOut.ch11 = channelData[11];
         PackedRCdataOut.ch12 = channelData[12];
